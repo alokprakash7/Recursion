@@ -1,0 +1,16 @@
+# include<bits/stdc++.h>
+using namespace std;
+void print(int n, int m){
+    if(m==n+1){
+        return;
+    }
+    cout<<m<<endl;
+    m++;
+    print(n,m);
+}
+int main(){
+    int m =1;
+    int n;
+    cin>>n;
+    print(n,m);
+}
