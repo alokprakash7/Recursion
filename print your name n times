@@ -1,0 +1,17 @@
+# include<bits/stdc++.h>
+using namespace std;
+void names(int n,string s){
+    
+    if(n==5){
+        return;
+    }
+    cout<<s<<endl;
+    n++;
+    names(n,s);
+}
+int main(){
+    int n=0;
+    string s;
+    cin>>s;
+    names(n,s);
+}
